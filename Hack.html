@@ -3,27 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clickable Animated GIF</title>
+  <title>Clickable GIF with Background GIF</title>
   <style>
+    /* Make the background GIF fill the whole screen */
     body {
+      margin: 0;
+      height: 100vh;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      background-color: #111;
+      background: url("background.gif?raw=true") no-repeat center center fixed;
+      background-size: cover;
+      overflow: hidden;
     }
 
+    /* Make the clickable GIF stand out */
     a {
       display: inline-block;
       text-decoration: none;
     }
 
     img {
-      width: 300px; /* adjust size */
+      width: 300px; /* adjust size as needed */
       border-radius: 10px;
       transition: transform 0.2s ease-in-out;
-      image-rendering: auto;
-      object-fit: contain;
     }
 
     img:hover {
@@ -32,15 +36,10 @@
   </style>
 </head>
 <body>
-  <!-- Replace with your actual file -->
-  <!-- Use a direct GIF file (not an HTML preview link) -->
+  <!-- Replace 'your-gif.gif' with your actual clickable GIF file -->
+  <!-- Replace 'nextpage.html' with your destination -->
   <a href="Truth1.html">
-    <img 
-      src="hack.gif?raw=true" 
-      alt="Click to continue" 
-      autoplay 
-      loop
-    />
+    <img src="hack.gif?raw=true" alt="Click to continue" />
   </a>
 </body>
 </html>
