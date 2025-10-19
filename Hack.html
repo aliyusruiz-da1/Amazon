@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clickable GIF</title>
+  <title>Clickable Animated GIF</title>
   <style>
     body {
       display: flex;
@@ -22,6 +22,8 @@
       width: 300px; /* adjust size */
       border-radius: 10px;
       transition: transform 0.2s ease-in-out;
+      image-rendering: auto;
+      object-fit: contain;
     }
 
     img:hover {
@@ -30,10 +32,15 @@
   </style>
 </head>
 <body>
-  <!-- Replace "your-gif.gif" with your actual GIF path or URL -->
-  <!-- Replace "nextpage.html" with your target page -->
+  <!-- Replace with your actual file -->
+  <!-- Use a direct GIF file (not an HTML preview link) -->
   <a href="Truth1.html">
-    <img src="hack.gif" alt="Click me!" />
+    <img 
+      src="hack.gif?raw=true" 
+      alt="Click to continue" 
+      autoplay 
+      loop
+    />
   </a>
 </body>
 </html>
