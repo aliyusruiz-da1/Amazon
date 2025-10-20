@@ -3,25 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Playing GIF Example</title>
+  <title>Clickable MP4 Example</title>
   <style>
     body {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #111;
+      background-color: #000;
+      margin: 0;
     }
 
-    img {
+    video {
       width: 400px; /* adjust to your needs */
       border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    video:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <!-- Replace with your GIF path -->
-  <img src="hack.gif?raw=true" alt="Animated GIF" />
+  <!-- The video tag with autoplay, muted, and loop ensures smooth playback -->
+  <!-- When clicked, JavaScript redirects to nextpage.html -->
+  <video 
+    src="your-video.mp4" 
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    onclick="window.location.href='nextpage.html';">
+  </video>
 </body>
 </html>
-
