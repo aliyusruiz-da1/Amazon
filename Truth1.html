@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clickable Image Example</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #111;
+      margin: 0;
+    }
 
+    a {
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    img {
+      width: 300px; /* adjust size */
+      border-radius: 10px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Replace with your own image and destination page -->
+  <a href="nextpage.html">
+    <img src="your-image.png" alt="Click me!" />
+  </a>
+</body>
+</html>
