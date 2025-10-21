@@ -3,37 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clickable Image Example</title>
+  <title>Clickable MP4 Example</title>
   <style>
     body {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: #111;
+      background-color: #000;
       margin: 0;
     }
 
-    a {
-      display: inline-block;
-      text-decoration: none;
-    }
-
-    img {
-      width: 300px; /* adjust size */
-      border-radius: 10px;
+    video {
+      width: 1600px; /* adjust to your needs */
+      border-radius: 12px;
+      cursor: pointer;
       transition: transform 0.2s ease-in-out;
     }
 
-    img:hover {
+    video:hover {
       transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <!-- Replace with your own image and destination page -->
-  <a href="nextpage.html">
-    <img src="Rocket1.mp4" alt="Click me!" />
-  </a>
+  <!-- The video tag with autoplay, muted, and loop ensures smooth playback -->
+  <!-- When clicked, JavaScript redirects to nextpage.html -->
+  <video 
+    src="Rocket1.mp4" 
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    onclick="window.location.href='Truth1.html';">
+  </video>
 </body>
 </html>
